@@ -1,1 +1,1 @@
-# MCGalaxy-plugins-and-stuffs
+# MCGalaxy-Plugins
