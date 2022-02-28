@@ -1,4 +1,4 @@
-NOTE: This patch requires .NET Framework 4.5 or newer. Untested on Windows 7.
+Warning: This patch requires .NET Framework 4.5 or newer. This patch is untested on Windows 7 or older.
 
 Help/FAQ:
 1-
