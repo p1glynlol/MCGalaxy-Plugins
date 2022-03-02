@@ -21,7 +21,7 @@ namespace MCGalaxy.Commands.Info
 		public override void Unload(bool shutdown)
 		{
 			Logger.Log(LogType.Warning, "&cRestart the server to prevent problems!");
-                        Command.Unregister(new CmdTop2());
+                  Command.Unregister(new CmdTop2());
 		}
 	}
 	
