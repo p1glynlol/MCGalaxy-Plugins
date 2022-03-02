@@ -1,7 +1,6 @@
 // improved version of /top which extends the limit to 30 instead of 15
 using System;
 using System.Collections.Generic;
-using System.Data;
 using MCGalaxy.DB;
 using MCGalaxy.SQL;
 
@@ -42,7 +41,7 @@ namespace MCGalaxy.Commands.Info
             if (args.Length < 2) { Help(p); return; }
             
             int maxResults = 0, offset = 0;
-            if (!CommandParser.GetInt(p, args[0], "Max results", ref maxResults, 1, 15)) return;
+            if (!CommandParser.GetInt(p, args[0], "Max results", ref maxResults, 1, 30)) return;
 
             TopStat stat = FindTopStat(args[1]);
             if (stat == null) {
