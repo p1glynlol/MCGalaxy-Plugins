@@ -14,5 +14,5 @@ Q: Does this work with Mono Framework?
 A: No, this works with .NET Framework only. 
 
 For server hoster that use Mono Framework (eddynetweb and Dino Hosting uses mono) or os that didn't support .NET Framework 4.5, you need manually update MCGalaxy by downloading
-the files from https://github.com/UnknownShadow200/MCGalaxy/tree/master/Uploads which is MCGalaxy.exe, MCGalaxyCLI.exe and MCGalaxy.dll, place these files on the server folder and
+the files from https://github.com/UnknownShadow200/MCGalaxy/tree/master/Uploads which is MCGalaxy.exe, MCGalaxyCLI.exe and MCGalaxy_.dll, place these files on the server folder and
 delete Updater.exe because MCGalaxy (since 1.9.2.9) updates in-place instead of using the updater.
