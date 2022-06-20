@@ -30,7 +30,7 @@ namespace MCGalaxy.Commands.Info
         public override string name { get { return "Top"; } }
         public override string shortcut { get { return "Most"; } }
         public override string type { get { return CommandTypes.Information; } }
-        public override bool SuperUseable { get { return false; } }
+        public override bool SuperUseable { get { return true; } }
         public override CommandAlias[] Aliases {
             get { return new [] { new CommandAlias("TopTen", "10"), new CommandAlias("TopFive", "5"),
                     new CommandAlias("Top10", "10"), new CommandAlias("Top15", "15"), new CommandAlias("Top30", "30"), }; }
