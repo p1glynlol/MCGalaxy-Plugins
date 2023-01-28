@@ -1,3 +1,4 @@
+//Poorly written, might need to improve this soon.
 using System;
 using System.Collections.Generic;
 using MCGalaxy;
@@ -44,7 +45,7 @@ namespace VerifyNames {
         
         public override void Help(Player p) {
             p.Message("&T/VerifyNames on/off");
-            p.Message("&HSets whether cracked/offline mode players can join the server");
+            p.Message("&HSets whether cracked/offline mode players can join the server.");
         }
     }
 }
