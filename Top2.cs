@@ -15,7 +15,7 @@
     or implied. See the Licenses for the specific language governing
     permissions and limitations under the Licenses.
  */
-// improved version of /top which extends the limit to 30 instead of 15
+// Improved version of /top that extend the limit to 30 instead of 15.
 using System;
 using System.Collections.Generic;
 using MCGalaxy.DB;
@@ -69,7 +69,7 @@ namespace MCGalaxy.Commands.Info
             List<TopResult> results = stat.GetResults(maxResults, offset);
             p.Message("&a{0}:", stat.Title);
 		 
-            for (int i = 0; i < stats.Count; i++) 
+            for (int i = 0; i < results.Count; i++) 
 	    {
                 p.Message("{0}) {1} &S- {2}", offset + (i + 1),
 			  stat.FormatName(p, results[i].Name),
