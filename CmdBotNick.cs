@@ -1,4 +1,5 @@
-﻿using MCGalaxy;
+//Poorly written.
+using MCGalaxy;
 
 namespace Botnick {
 	public sealed class CmdBotnick : Command2 {
