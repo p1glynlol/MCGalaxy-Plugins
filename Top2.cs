@@ -6,8 +6,8 @@
     not use this file except in compliance with the Licenses. You may
     obtain a copy of the Licenses at
     
-    http://www.opensource.org/licenses/ecl2.php
-    http://www.gnu.org/licenses/gpl-3.0.html
+    https://opensource.org/license/ecl-2-0/
+    https://www.gnu.org/licenses/gpl-3.0.html
     
     Unless required by applicable law or agreed to in writing,
     software distributed under the Licenses are distributed on an "AS IS"
@@ -25,8 +25,8 @@ namespace MCGalaxy.Commands.Info
 	public class Top2 : Plugin
 	{
 		public override string name { get { return "Top2"; } }
-		public override string MCGalaxy_Version { get { return "1.9.4.7"; } } //some of the code is from icanttellyou/TomCube
-		public override string creator { get { return "p1glynlol"; } }
+		public override string MCGalaxy_Version { get { return "1.9.4.7"; } }
+		public override string creator { get { return "p1glynlol"; } } //some of the code is from icanttellyou/TomCube
 
 		public override void Load(bool startup)
 		{
@@ -37,7 +37,7 @@ namespace MCGalaxy.Commands.Info
 		public override void Unload(bool shutdown)
 		{
 			Logger.Log(LogType.Warning, "&cRestart the server to prevent problems!");
-                        Command.Unregister(new CmdTop2());
+            Command.Unregister(new CmdTop2());
 		}
 	}
 		
@@ -71,7 +71,7 @@ namespace MCGalaxy.Commands.Info
 		 
             for (int i = 0; i < results.Count; i++) 
 	    {
-                p.Message("{0}) {1} &S- {2}", offset + (i + 1),
+              p.Message("{0}) {1} &S- {2}", offset + (i + 1),
 			  stat.FormatName(p, results[i].Name),
 			  stat.Formatter(results[i].Value));
             }
@@ -79,9 +79,9 @@ namespace MCGalaxy.Commands.Info
         
         public override void Help(Player p) {
             p.Message("&T/Top [max results] [stat] <offset>");
-            p.Message("&HPrints a list of players who have the " +
-                       "most/top of a particular stat. Available stats:");
+            p.Message("&HPrints a list of players who have the " + "most/top of a particular stat. Available stats:");
             TopStat.List(p);
         }
     }
 }
+
