@@ -79,8 +79,9 @@ namespace MCGalaxy.Commands.Info
         
         public override void Help(Player p) {
             p.Message("&T/Top [max results] [stat] <offset>");
-            p.Message("&HPrints a list of players who have the " + " most/top of a particular stat. Available stats:");
+            p.Message("&HPrints a list of players who have the " + "most/top of a particular stat. Available stats:");
             TopStat.List(p);
         }
     }
 }
+
